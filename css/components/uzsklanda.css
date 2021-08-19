@@ -1,0 +1,90 @@
+.uzsklanda {
+  background-color: #000000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  /* spalva - juoda
+     position - fixed, nes norim, kad visuomet laikytųsi skrolinant
+     dydžiai
+     plotis - lygus 100 % ekrano pločio (vw)
+     aukštis - lygus 100 % ekrano aukščio (vh)*/
+  animation-name: uzsklanda;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  /* pasirenkam animacijos parametrus */
+}
+@keyframes uzsklanda {
+  0% {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    margin: 0px;
+  }
+  96% {
+    background-color: #000000;
+  }
+  /* 97% {
+    height: 75vh;
+    width: 75vw;
+  }
+  98% {
+    height: 25vh;
+    width: 25vw;
+  }  */
+  99% {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+  }
+  100% {
+    height: 1px;
+    width: 1px;
+    background-color: #b1b1b1;
+    margin: -10000px;
+  }
+}
+.uzsklandosratukas {
+  background-color: rgba(0, 0, 0, 0);
+  width: 14vh;
+  height: 14vh;
+  /* pradžiai pasirenkam red spalvą, kad matytųsi.Pasirenkam dydį, kadangi reikia kvadrato, 
+  tai dyžiai plotis ir aukštis vienodi */
+  border: 2px solid rgb(0, 0, 0);
+  /* pasirenkam apvadą */
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+  border-right-color: rgba(255, 255, 255, 0.2);
+  /* pasirenkam, kad apvado apačia būtų balta */
+  border-radius: 50%;
+  /* Uždedam border radius procentais, kad būtų skritulys*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* Pozicija išscentravimui */
+  animation-name: ratukas;
+  animation-duration: 1200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(100);
+  /* pasirenkam animacijos parametrus */
+}
+@keyframes ratukas {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+.uzsklandosp {
+  color: azure;
+  font-size: 5vh;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+/*  */

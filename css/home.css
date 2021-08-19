@@ -1,17 +1,20 @@
 /* base */
-@import './base/reset.css';
-@import './base/variables.css';
-@import './base/layout.css';
-@import './base/base.css';
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/layout.css";
+@import "./base/base.css";
 
 /* 3rd-party */
 
 /* components */
-@import './components/button.css';
-@import './components/footer.css';
-@import './components/header.css';
+@import "./components/button.css";
+@import "./components/footer.css";
+@import "./components/header.css";
+@import "./components/uzsklanda.css";
 
 /* CUSTOM PAGE STYLE BELOW THIS COMMENT LINE */
-body {
-    background-color: darksalmon;
+main {
+  width: 100%;
+  height: 15000px;
+  background-color: #e9f0ec;
 }
