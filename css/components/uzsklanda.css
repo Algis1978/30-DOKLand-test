@@ -9,7 +9,7 @@
      plotis - lygus 100 % ekrano pločio (vw)
      aukštis - lygus 100 % ekrano aukščio (vh)*/
   animation-name: uzsklanda;
-  animation-duration: 3000ms;
+  animation-duration: 500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   /* pasirenkam animacijos parametrus */
