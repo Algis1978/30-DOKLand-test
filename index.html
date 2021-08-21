@@ -9,17 +9,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/home.css">
     <style>
+        .column {
+            display:inline-block;
+            float: left;
+            width: 260px;
+            height: 600px;
+            margin:20px;
+            border: 4px solid chocolate;
+            border-radius: 20px;
+            padding: 24px;
+        }
         .spalvos {
-            width: 160px;
-            height: 35px;
-            font-size: 18px;
+            width: 200px;
+            height: 40px;
+            font-size: 20px;
             text-align: center;
-            padding: 5px;
+            padding: 8px;
         }
         h1 {
             font-size: 36px;
             width: 400px;
-            color: cornflowerblue;
+            color: rgb(47, 92, 177);
+            padding: 20px;
+        }
+        h2 {
+            color: rgb(47, 92, 177); 
+        }
+        p, li {
+            font-size: larger;
+            color: rgb(46, 44, 44);
         }
     </style>
 </head>
@@ -32,7 +50,8 @@
     </header>
     <main>
         </i><h1><i class="fa fa-snowflake-o" aria-hidden="true"></i>DOCLand TEST<i class="fa fa-snowflake-o"></i></h1></i><br>
-        
+
+        <div class = "column">
         <h2>Mygtukai (buttons)</h2>
         <p>class = "button1"</p><a href="#" class="button1">Join Now</a></p><br>
         <p>class = "button2"</p><a href="#" class="button2">Enroll Now</a></p><br>
@@ -40,15 +59,19 @@
         <p>Pavyzdys su class = "button1" </p><a href="#" class="button1">View All Reviews</a></p><br>
         <p>class = "button-play" </p><a href="#" class="button-play"><i class="fa fa-play" aria-hidden="true"></i></a></p><br>
         <p>class = "button-up" </p><a href="#" class="button-up"><i class="fa fa-angle-up" aria-hidden="true"></i></a></p><br>
+        </div>
 
-        <h2>Sisteminės spalvos</h2>
+        <div class="column">
+        <h2>Projekto spalvos</h2>
         <div class="spalvos" style="background-color: var(--system1)">--system1</div>
         <div class="spalvos" style="background-color: var(--system2)">--system2</div>
         <div class="spalvos" style="background-color: var(--fontlittle); color: white">--fontlittle</div>
         <div class="spalvos" style="background-color: var(--fontbig); color: white">--fontbig</div>
         <div class="spalvos" style="background-color: var(--colortexttab)">--colortexttab</div>
-        <div class="spalvos" style="background-color: blue; background-color: var(--mainbackground)">--mainbackground</div>
+        <div class="spalvos" style="background-color: var(--mainbackground)">--mainbackground</div>
+        </div>
 
+        <div class="column">
         <h2>Projekto reikalavimai</h2>
         <p>
             <ul>
@@ -62,6 +85,8 @@
                 <li>CSS import</li>
                 <li>JS import-export</li>
             </ul>
+        </p>
+        </div>
     </main>
     <footer>
     </footer>
