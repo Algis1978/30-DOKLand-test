@@ -109,18 +109,17 @@
   display: inline-block;
 }
 .button-up:hover {
-  animation-name: button-play;
+  animation-name: button-up;
   animation-duration: 800ms;
   animation-fill-mode: forwards;
 }
 @keyframes button-up {
   0% {
     background-color: var(--system2);
-  }
-  5% {
-    background-color: #c0a752;
+    opacity: 1;
   }
   100% {
-    background-color: var(--system1);
+    background-color: var(--system2);
+    opacity: 0.6;
   }
 }
