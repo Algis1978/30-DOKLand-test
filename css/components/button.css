@@ -17,14 +17,14 @@
   color: white;
 }
 .button1 {
-  background-color: var(--system1); /* pradine spalva */
+  background-color: var(--system1, dodgerblue); /* pradine spalva */
 }
 .button2 {
-  background-color: var(--system2); /* pradine spalva */
+  background-color: var(--system2, darkorange); /* pradine spalva */
 }
 .button3 {
-  background-color: white; /* pradine spalva */
-  color: var(--system1);
+  background-color: vra(--colortexttab, white); /* pradine spalva */
+  color: var(--system1, dodgerblue);
 }
 /* animacijų sukūrimas, kai hoverina */
 .button1:hover {
@@ -74,13 +74,13 @@
     color: var(--colortexttab);
   }
 }
-
+/* ______________________________________ */
 .button-play {
   padding: 18px 20px 17px 22px;
   border-radius: 50%;
   font-size: 20px;
-  color: var(--colortexttab);
-  background-color: var(--system2); /* pradine spalva */
+  color: var(--colortexttab, white);
+  background-color: var(--system2, darkorange); /* pradine spalva */
   display: inline-block;
 }
 .button-play:hover {
@@ -99,13 +99,13 @@
     background-color: var(--system1);
   }
 }
-
+/* _________________________________________ */
 .button-up {
   padding: 5px 10px 6px 10px;
   border-radius: 50%;
   font-size: 16px;
   color: var(--colortexttab);
-  background-color: var(--system2); /* pradine spalva */
+  background-color: var(--system2, darkorange); /* pradine spalva */
   filter: drop-shadow(0px 3px 6px rgba(164, 164, 165, 0.515));
   display: inline-block;
 }
