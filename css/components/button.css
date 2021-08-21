@@ -2,7 +2,7 @@
 .button2,
 .button3 {
   padding: 12px 30px 12px 30px;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: medium;
   font-weight: bolder;
   text-decoration: none;
@@ -10,21 +10,17 @@
 }
 .button1,
 .button2 {
-  padding: 12px 30px 12px 30px;
-  border-radius: 6px;
-  font-size: medium;
-  font-weight: bolder;
   color: white;
 }
 .button1 {
-  background-color: var(--system1, dodgerblue); /* pradine spalva */
+  background-color: var(--system1); /* pradine spalva */
 }
 .button2 {
-  background-color: var(--system2, darkorange); /* pradine spalva */
+  background-color: var(--system2); /* pradine spalva */
 }
 .button3 {
-  background-color: vra(--colortexttab, white); /* pradine spalva */
-  color: var(--system1, dodgerblue);
+  background-color: var(--colortexttab); /* pradine spalva */
+  color: var(--system1);
 }
 /* animacijų sukūrimas, kai hoverina */
 .button1:hover {
@@ -79,8 +75,8 @@
   padding: 18px 20px 17px 22px;
   border-radius: 50%;
   font-size: 20px;
-  color: var(--colortexttab, white);
-  background-color: var(--system2, darkorange); /* pradine spalva */
+  color: var(--colortexttab);
+  background-color: var(--system2); /* pradine spalva */
   display: inline-block;
 }
 .button-play:hover {
@@ -105,7 +101,7 @@
   border-radius: 50%;
   font-size: 16px;
   color: var(--colortexttab);
-  background-color: var(--system2, darkorange); /* pradine spalva */
+  background-color: var(--system2); /* pradine spalva */
   filter: drop-shadow(0px 3px 6px rgba(164, 164, 165, 0.515));
   display: inline-block;
 }
@@ -128,5 +124,48 @@
 .button-arrows {
 }
 /* ___________________________________ */
-.button-bottom {
+.button-bottom1 {
+  width: 100%;
+  height: 50px;
+  background-color: var(--system1);
+  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+}
+.button-bottom1 p {
+  color: var(--colortexttab);
+  font-size: large;
+  padding: 12px 0px 8px 20px;
+}
+.button-bottom2 {
+  width: 120px;
+  height: 50px;
+  background-color: var(--system2);
+  border-radius: 30px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.button-bottom2 p {
+  padding: 12px 0px 8px 24px;
+}
+.button-bottom2 a {
+  color: var(--colortexttab);
+  font-size: large;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.button-bottom2 a:hover {
+  animation-name: button-bottom2;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+@keyframes button-bottom2 {
+  0% {
+    color: var(--colortexttab);
+  }
+  100% {
+    color: var(--fontbig);
+  }
 }
