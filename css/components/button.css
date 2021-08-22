@@ -97,17 +97,30 @@
 }
 /* _________________________________________ */
 .button-up {
-  padding: 5px 10px 6px 10px;
+  padding: 8px 14px 6px 14px;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 22px;
   color: var(--colortexttab);
   background-color: var(--system2); /* pradine spalva */
   filter: drop-shadow(0px 3px 6px rgba(164, 164, 165, 0.515));
-  display: inline-block;
+  position: fixed;
+  margin-top: 86vh;
+  margin-left: 92vw;
+  animation-name: button-up-move;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+}
+@keyframes button-up-move {
+  0% {
+    margin-top: 55vh;
+  }
+  100% {
+    margin-top: 86vh;
+  }
 }
 .button-up:hover {
   animation-name: button-up;
-  animation-duration: 800ms;
+  animation-duration: 400ms;
   animation-fill-mode: forwards;
 }
 @keyframes button-up {
@@ -117,7 +130,32 @@
   }
   100% {
     background-color: var(--system2);
-    opacity: 0.6;
+    opacity: 0.5;
+  }
+}
+/* ______________________________________________ */
+.button-up1 {
+  padding: 5px 10px 6px 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: var(--colortexttab);
+  background-color: var(--system2); /* pradine spalva */
+  filter: drop-shadow(0px 3px 6px rgba(164, 164, 165, 0.515));
+  display: inline-block;
+}
+.button-up1:hover {
+  animation-name: button-up1;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+}
+@keyframes button-up1 {
+  0% {
+    background-color: var(--system2);
+    opacity: 1;
+  }
+  100% {
+    background-color: var(--system2);
+    opacity: 0.5;
   }
 }
 /* ___________________________________ */
