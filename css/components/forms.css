@@ -26,6 +26,7 @@
   border-radius: 30px;
   background-color: var(--system2);
   font-size: large;
+  font-weight: bolder;
   color: var(--colortexttab);
   padding: 0px 0px 4px 0px;
   display: inline-block;
@@ -34,7 +35,7 @@
 }
 .bottom-subscribe:hover {
   animation-name: bottom-subscribe;
-  animation-duration: 800ms;
+  animation-duration: 400ms;
   animation-fill-mode: forwards;
 }
 @keyframes bottom-subscribe {
