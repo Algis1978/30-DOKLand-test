@@ -13,6 +13,7 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   /* pasirenkam animacijos parametrus */
+  z-index: 100;
 }
 @keyframes uzsklanda {
   0% {
@@ -52,8 +53,8 @@
   tai dyžiai plotis ir aukštis vienodi */
   border: 2px solid rgba(0, 0, 0, 0);
   /* pasirenkam apvadą */
-  border-bottom-color: rgba(255, 255, 255, 0.35); 
-  border-right-color: rgba(255, 255, 255, 0.25); 
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+  border-right-color: rgba(255, 255, 255, 0.25);
   /* pasirenkam, kad apvado apačia būtų balta, permatoma */
   border-radius: 50%;
   /* Uždedam border radius procentais, kad būtų skritulys*/
@@ -67,7 +68,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: steps(100);
   /* pasirenkam animacijos parametrus */
- } 
+}
 @keyframes ratukas {
   0% {
     transform: translate3d(-50%, -50%, 0) rotate(0deg);
