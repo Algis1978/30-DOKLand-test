@@ -95,7 +95,7 @@
     background-color: var(--system1);
   }
 }
-.viewallreviews {
+.viewallreviews > p {
   text-align: center;
 }
 /* _________________________________________ */
