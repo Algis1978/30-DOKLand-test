@@ -95,6 +95,9 @@
     background-color: var(--system1);
   }
 }
+.viewallreviews {
+  text-align: center;
+}
 /* _________________________________________ */
 .button-up {
   padding: 8px 14px 6px 14px;
