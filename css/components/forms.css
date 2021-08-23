@@ -1,4 +1,5 @@
-/* MAIN-FORM-DIV */
+/* MAIN-FORM-DIV 
+Didžioji email forma centre*/
 .main-form-div {
   background-color: var(--system1);
   border-radius:60px;
@@ -54,7 +55,10 @@
     color: var(--system2);
   }
 }
-/* BOTTOM-FORM */
+
+
+/* BOTTOM-FORM 
+Forma apačioje footer dalyje*/
 .bottom-form {
   width: 100%;
   position: relative;
