@@ -113,9 +113,11 @@
 @keyframes button-up-move {
   0% {
     margin-top: 55vh;
+    opacity: 0;
   }
   100% {
     margin-top: 86vh;
+    opacity: 1;
   }
 }
 .button-up:hover {
