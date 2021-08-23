@@ -2,7 +2,7 @@
 Didžioji email forma centre*/
 .main-form-div {
   background-color: var(--system1);
-  border-radius:60px;
+  border-radius: 60px;
 }
 .main-form {
   width: 100%;
@@ -41,6 +41,7 @@ Didžioji email forma centre*/
   padding: 0px 0px 4px 0px;
   position: absolute;
   right: 0px;
+  cursor: pointer;
 }
 .main-arrow:hover {
   animation-name: main-arrow;
@@ -55,7 +56,6 @@ Didžioji email forma centre*/
     color: var(--system2);
   }
 }
-
 
 /* BOTTOM-FORM 
 Forma apačioje footer dalyje*/
@@ -89,6 +89,7 @@ Forma apačioje footer dalyje*/
   padding: 0px 0px 4px 0px;
   position: absolute;
   right: 0px;
+  cursor: pointer;
 }
 .bottom-subscribe:hover {
   animation-name: bottom-subscribe;
