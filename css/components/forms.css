@@ -1,56 +1,62 @@
-/* BOTTOM-FORM */
-.bottom-form {
-  width: 100%;
-  display: inline-block;
-  position: relative;
+/* MAIN-FORM-DIV */
+.main-form-div {
+  background-color: var(--system1);
+  border-radius:60px;
 }
-.email-bottom {
+.main-form {
+  width: 100%;
+  position: relative;
+  padding-bottom: 110px;
+}
+.main-form-h2 {
+  color: var(--colortexttab);
+  font-size: 36px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 12px;
+}
+.email-main {
   width: 100%;
   height: 46px;
   border: none;
   outline: none;
-  border-radius: 30px;
+  border-bottom: 1px solid var(--colortexttab);
   background-color: var(--system1);
   font-size: large;
   color: var(--colortexttab);
   padding: 0px 0px 4px 20px;
-  display: inline-block;
 }
-.email-bottom::placeholder {
+.email-main::placeholder {
   color: var(--colortexttab);
 }
-.bottom-subscribe {
+.main-arrow {
   width: 100px;
   height: 46px;
   border: none;
-  border-radius: 30px;
-  background-color: var(--system2);
+  background-color: var(--system1);
+  border-bottom: 1px solid var(--colortexttab);
   font-size: large;
-  font-weight: bolder;
   color: var(--colortexttab);
   padding: 0px 0px 4px 0px;
-  display: inline-block;
   position: absolute;
   right: 0px;
 }
-.bottom-subscribe:hover {
-  animation-name: bottom-subscribe;
+.main-arrow:hover {
+  animation-name: main-arrow;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
 }
-@keyframes bottom-subscribe {
+@keyframes main-arrow {
   0% {
     color: var(--colortexttab);
   }
   100% {
-    color: var(--fontbig);
+    color: var(--system2);
   }
 }
-
 /* BOTTOM-FORM */
 .bottom-form {
   width: 100%;
-  display: inline-block;
   position: relative;
 }
 .email-bottom {
@@ -63,7 +69,6 @@
   font-size: large;
   color: var(--colortexttab);
   padding: 0px 0px 4px 20px;
-  display: inline-block;
 }
 .email-bottom::placeholder {
   color: var(--colortexttab);
@@ -78,7 +83,6 @@
   font-weight: bolder;
   color: var(--colortexttab);
   padding: 0px 0px 4px 0px;
-  display: inline-block;
   position: absolute;
   right: 0px;
 }
