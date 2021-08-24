@@ -17,14 +17,12 @@
   background-color: var(--system1, cadetblue); /* pradine spalva */
 }
 .button2 {
-  background-color: orange; /* pradine spalva */
-  background-color: var(--system2); /* pradine spalva */
+  background-color: var(--system2, darkorange); /* pradine spalva */
 }
 .button3 {
   background-color: white; /* pradine spalva */
   background-color: var(--colortexttab); /* pradine spalva */
-  color: cadetblue;
-  color: var(--system1);
+  color: var(--system1, cadetblue);
 }
 /* animacijų sukūrimas, kai hoverina */
 .button1:hover {
