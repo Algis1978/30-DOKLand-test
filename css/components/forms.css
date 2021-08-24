@@ -1,6 +1,7 @@
 /* MAIN-FORM-DIV 
 Didžioji email forma centre*/
 .main-form-div {
+  background-color: cadetblue;
   background-color: var(--system1);
   border-radius:60px;
 }
@@ -10,6 +11,7 @@ Didžioji email forma centre*/
   padding-bottom: 110px;
 }
 .main-form-h2 {
+  color: white;
   color: var(--colortexttab);
   font-size: 36px;
   text-align: center;
@@ -21,22 +23,29 @@ Didžioji email forma centre*/
   height: 46px;
   border: none;
   outline: none;
+  border-bottom: 1px solid white;
   border-bottom: 1px solid var(--colortexttab);
+  background-color: cadetblue;
   background-color: var(--system1);
   font-size: large;
+  color: white;
   color: var(--colortexttab);
   padding: 0px 0px 4px 20px;
 }
 .email-main::placeholder {
+  color: white;
   color: var(--colortexttab);
 }
 .main-arrow {
   width: 100px;
   height: 46px;
   border: none;
+  background-color: cadetblue;
   background-color: var(--system1);
+  border-bottom: 1px solid white;
   border-bottom: 1px solid var(--colortexttab);
   font-size: large;
+  color: white;
   color: var(--colortexttab);
   padding: 0px 0px 4px 0px;
   position: absolute;
@@ -69,12 +78,15 @@ Forma apačioje footer dalyje*/
   border: none;
   outline: none;
   border-radius: 30px;
+  background-color: cadetblue;
   background-color: var(--system1);
   font-size: large;
+  color: white;
   color: var(--colortexttab);
   padding: 0px 0px 4px 20px;
 }
 .email-bottom::placeholder {
+  color: white;
   color: var(--colortexttab);
 }
 .bottom-subscribe {
@@ -82,9 +94,11 @@ Forma apačioje footer dalyje*/
   height: 46px;
   border: none;
   border-radius: 30px;
+  background-color: darkorange;
   background-color: var(--system2);
   font-size: large;
   font-weight: bolder;
+  color: white;
   color: var(--colortexttab);
   padding: 0px 0px 4px 0px;
   position: absolute;
