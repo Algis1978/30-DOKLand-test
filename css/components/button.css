@@ -14,15 +14,18 @@
   color: var (--colortexttab);
 }
 .button1 {
-  background-color: var(--system1, cadetblue); /* pradine spalva */
+  background-color: cadetblue; /* pradine spalva */
+  background-color: var(--system1); /* pradine spalva */
 }
 .button2 {
-  background-color: var(--system2, darkorange); /* pradine spalva */
+  background-color: orange; /* pradine spalva */
+  background-color: var(--system2); /* pradine spalva */
 }
 .button3 {
   background-color: white; /* pradine spalva */
   background-color: var(--colortexttab); /* pradine spalva */
-  color: var(--system1, cadetblue);
+  color: cadetblue;
+  color: var(--system1);
 }
 /* animacijų sukūrimas, kai hoverina */
 .button1:hover {
