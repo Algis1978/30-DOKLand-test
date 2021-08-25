@@ -29,6 +29,7 @@ Didžioji email forma centre*/
 }
 .email-main::placeholder {
   color: var(--colortexttab);
+  text-align: left;
 }
 .main-arrow {
   width: 100px;
