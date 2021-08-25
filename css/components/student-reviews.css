@@ -1,0 +1,10 @@
+.student-text {
+    background-color: white;
+    background-color: var(--colortexttab);
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px blueviolet;
+}
+.star-rating {
+  color: orange; /* pradine spalva */
+  color: var(--system2); /* pradine spalva */
+}
