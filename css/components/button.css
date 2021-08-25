@@ -18,7 +18,7 @@
   background-color: var(--system1); /* pradine spalva */
 }
 .button2 {
-  background-color: orange; /* pradine spalva */
+  background-color: darkorange; /* pradine spalva */
   background-color: var(--system2); /* pradine spalva */
 }
 .button3 {
@@ -179,5 +179,41 @@
   }
 }
 /* ___________________________________ */
-.button-arrows {
+.button-arrow {
+  background-color: #c4faf8;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  color: var(--system1);
+  font-size: 28px;
+  padding: 6px 16px 2px 16px;
+}
+.button-arrow:hover {
+  animation-name: button-arrow;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+}
+.student-review-h2 {
+  display: inline-block;
+  width: 70%;
+}
+.arrow-left {
+  display: inline-block;
+  float: right;
+  margin-right: 12px;
+}
+.arrow-right {
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+}
+@keyframes button-arrow {
+  0% {
+    background-color: #c4faf8;
+    color: var(--system1);
+  }
+  100% {
+    background-color: var(--system1);
+    color: var(--colortexttab);
+  }
 }
