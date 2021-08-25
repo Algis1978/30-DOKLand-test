@@ -12,6 +12,7 @@
 @import "./components/header.css";
 @import "./components/uzsklanda.css";
 @import "./components/forms.css";
+@import "./components/form-center.css";
 
 /* CUSTOM PAGE STYLE BELOW THIS COMMENT LINE */
 html {
