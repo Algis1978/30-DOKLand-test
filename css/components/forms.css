@@ -3,7 +3,7 @@ Didžioji email forma centre*/
 .main-form-div {
   background-color: cadetblue;
   background-color: var(--system1);
-  border-radius: 60px;
+  border-radius: 40px;
 }
 .main-form {
   width: 100%;
@@ -13,10 +13,19 @@ Didžioji email forma centre*/
 .main-form-h2 {
   color: white;
   color: var(--colortexttab);
-  font-size: 36px;
+  font-size: 44px;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 12px;
+}
+@media screen and (max-width: 800px) {
+  .main-form {
+    padding-bottom: 60px;
+  }
+  .main-form-h2 {
+    padding-top: 50px;
+    font-size: 36px;
+  }
 }
 .email-main {
   width: 100%;
@@ -30,7 +39,7 @@ Didžioji email forma centre*/
   font-size: large;
   color: white;
   color: var(--colortexttab);
-  padding: 0px 0px 4px 20px;
+  padding: 0px 0px 4px 0px;
 }
 .email-main::placeholder {
   color: white;
@@ -38,19 +47,18 @@ Didžioji email forma centre*/
 }
 .main-arrow {
   width: 100px;
-  height: 46px;
+  height: 44px;
   border: none;
   background-color: cadetblue;
   background-color: var(--system1);
-  border-bottom: 1px solid white;
-  border-bottom: 1px solid var(--colortexttab);
   font-size: large;
   color: white;
   color: var(--colortexttab);
-  padding: 0px 0px 4px 0px;
+  padding: 0px 0px 3px 0px;
   position: absolute;
   right: 0px;
   cursor: pointer;
+  text-align: right;
 }
 .main-arrow:hover {
   animation-name: main-arrow;
