@@ -1,63 +1,3 @@
-/* MAIN-FORM-DIV 
-Didžioji email forma centre*/
-.main-form-div {
-  background-color: var(--system1);
-  border-radius: 60px;
-}
-.main-form {
-  width: 100%;
-  position: relative;
-  padding-bottom: 110px;
-}
-.main-form-h2 {
-  color: var(--colortexttab);
-  font-size: 36px;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 12px;
-}
-.email-main {
-  width: 100%;
-  height: 46px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--colortexttab);
-  background-color: var(--system1);
-  font-size: large;
-  color: var(--colortexttab);
-  padding: 0px 0px 4px 20px;
-}
-.email-main::placeholder {
-  color: var(--colortexttab);
-  text-align: left;
-}
-.main-arrow {
-  width: 100px;
-  height: 46px;
-  border: none;
-  background-color: var(--system1);
-  border-bottom: 1px solid var(--colortexttab);
-  font-size: large;
-  color: var(--colortexttab);
-  padding: 0px 0px 4px 0px;
-  position: absolute;
-  right: 0px;
-  cursor: pointer;
-}
-.main-arrow:hover {
-  animation-name: main-arrow;
-  animation-duration: 400ms;
-  animation-fill-mode: forwards;
-}
-@keyframes main-arrow {
-  0% {
-    color: var(--colortexttab);
-  }
-  100% {
-    color: var(--system2);
-  }
-}
-
 /* BOTTOM-FORM 
 Forma apačioje footer dalyje*/
 .bottom-form {
@@ -70,12 +10,15 @@ Forma apačioje footer dalyje*/
   border: none;
   outline: none;
   border-radius: 30px;
+  background-color: cadetblue;
   background-color: var(--system1);
   font-size: large;
+  color: white;
   color: var(--colortexttab);
   padding: 0px 0px 4px 20px;
 }
 .email-bottom::placeholder {
+  color: white;
   color: var(--colortexttab);
 }
 .bottom-subscribe {
@@ -83,9 +26,11 @@ Forma apačioje footer dalyje*/
   height: 46px;
   border: none;
   border-radius: 30px;
+  background-color: darkorange;
   background-color: var(--system2);
   font-size: large;
   font-weight: bolder;
+  color: white;
   color: var(--colortexttab);
   padding: 0px 0px 4px 0px;
   position: absolute;
