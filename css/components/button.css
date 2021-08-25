@@ -223,3 +223,43 @@
     margin-right: -10000px;
   }
 }
+
+/* ___________________________________ */
+.button-arrow1 {
+  background-color: #c4faf8;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  color: var(--system1);
+  font-size: 28px;
+  padding: 6px 16px 2px 16px;
+}
+.button-arrow1:hover {
+  animation-name: button-arrow1;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+}
+.student-review-h2 {
+  display: inline-block;
+  width: 70%;
+}
+.arrow-left1 {
+  display: inline-block;
+  float: left;
+  margin-right: 0px;
+}
+.arrow-right1 {
+  display: inline-block;
+  float: left;
+  margin-left: 16px;
+}
+@keyframes button-arrow1 {
+  0% {
+    background-color: #c4faf8;
+    color: var(--system1);
+  }
+  100% {
+    background-color: var(--system1);
+    color: var(--colortexttab);
+  }
+}
