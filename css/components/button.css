@@ -100,8 +100,9 @@
     color: var(--colortexttab);
   }
 }
-.view-all-reviews {
-  margin: auto;
+
+.viewallreviews > p {
+  text-align: center;
 }
 
 /* ______________________________________ */
@@ -130,9 +131,6 @@
   100% {
     background-color: var(--system1);
   }
-}
-.viewallreviews > p {
-  text-align: center;
 }
 /* _________________________________________ */
 .button-up {
