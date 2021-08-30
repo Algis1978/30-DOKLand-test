@@ -12,6 +12,7 @@
   padding:2%;
 }
 .star-rating {
+display:inline-block;
 color: darkorange; /* pradine spalva */
 color: var(--system2); /* pradine spalva */
 }
