@@ -4,21 +4,19 @@
     color: black;
     color: var(--fontbig);
 }
-
-.student-slide {
+.student-slide{
   background-color: white;
   background-color: var(--colortexttab);
   border-radius: 10px;
   box-shadow: 5px 10px 20px rgba(137, 43, 226, 0.76);
-  padding: 2%;
+  padding:2%;
 }
 .star-rating {
-  color: darkorange; /* pradine spalva */
-  color: var(--system2); /* pradine spalva */
+color: darkorange; /* pradine spalva */
+color: var(--system2); /* pradine spalva */
 }
-.student-info,
-.student-text {
-  padding-top: 4%;
+.student-info, .student-text {
+ padding-top: 4%; 
 }
 .student-photo {
   display: inline-block;
@@ -42,63 +40,23 @@
   font-size: 20px;
 }
 .student-rating {
-<<<<<<< HEAD
-    display:inline-block;
-    width: fit-content;
-    margin-left: 5%;
-=======
-  display: inline-block;
+  display:inline-block;
   width: fit-content;
 }
-.st-ratings {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 48% 48%;
-  grid-column-gap: 4%;
-  padding: 0%;
-}
-.student-rating {
-  width: 100%;
-}
-.student-rating p {
+.student-rating > p {
   text-align: center;
->>>>>>> a83bd1aabc609721f06a46ae490788e40eed0c58
 }
-.student-rating-left,
-.student-rating-right {
-  width: fit-content;
-}
-<<<<<<< HEAD
 .reviews-rating, .reviews-count {
-    font-size: 72px;
-    font-weight: bold;
-=======
-.student-rating-left {
-  float: right;
-}
-@media screen and (max-width: 460px) {
-  .st-ratings {
-    display: block;
-  }
-  .student-rating-left,
-  .student-rating-right {
-    width: 100%;
-    margin: auto;
-  }
-}
-.reviews-rating,
-.reviews-count {
-  font-size: 58px;
+  font-size: 66px;
   font-weight: bold;
-  padding: 15px;
->>>>>>> a83bd1aabc609721f06a46ae490788e40eed0c58
+  padding:15px;
 }
 .reviews-rating {
-  color: darkorange;
+  color:darkorange;
   color: var(--system2);
 }
 .reviews-count {
-  color: cadetblue;
+  color:cadetblue;
   color: var(--system1);
 }
 .student-rating > :last-child {
