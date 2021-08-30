@@ -18,8 +18,10 @@ color: var(--system2); /* pradine spalva */
 .student-info, .student-text {
  padding-top: 4%; 
 }
-.student-photo > img {
+.student-photo {
   display: inline-block;
+}
+.student-photo > img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
