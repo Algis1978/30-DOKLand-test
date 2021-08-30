@@ -4,7 +4,6 @@
     gap: 4%;
 }
 .star-row{
-    background-color: chartreuse;
     margin-top: 50px;
 }
 .star-container {
@@ -42,12 +41,13 @@ h1 {
 }
 .enroll-button {
     float: left;
+    margin-right: 30px;
 }
 .fin-aid {
-    width: fit-content;
+    width: 200px;
     float: left;
     margin-top: 14px;
-    margin-left: 30px;
+    margin-bottom: 50px;
     font-weight: bolder;
 }
 .fin-aid a{
@@ -64,31 +64,134 @@ h1 {
     height: auto;
 }
 .skritulys1 {
-    width: 23vw;
-    height: 23vw;
+    width: 250px;
+    height: 250px;
     background-color: cadetblue;
     background-color: var(--system1);
     border-radius: 50%;
-    z-index: -1;
+    z-index: -2;
     position: absolute;
     right: 10px;
-    top: 32%
+    bottom: 0px;
 }
 .skritulys2 {
     width: 150px;
-    height:150px;
+    height: 150px;
     background-color: cadetblue;
     background-color: var(--system1);
     border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+    left: 80px;
+    top: 0%;
+}
+.sesiakampis {
+    width: 80px;
+    height:160px;
+    background-color: darkorange;
+    background-color: var(--system2);
+    border-radius: 10px;
     z-index: -1;
     position: absolute;
-    left: 30px;
-    top: 0%
+    top: 20px;
+    left: 50px;
+}
+.sesiakampis2 {
+    width: 80px;
+    height:160px;
+    background-color: darkorange;
+    background-color: var(--system2);
+    border-radius: 10px;
+    z-index: -1;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    transform: rotate(-45deg);
+}
+.sesiakampis::before {
+    content:"";
+    width: 80px;
+    height:160px;
+    background-color: darkorange;
+    background-color: var(--system2);
+    border-radius: 10px;    
+    position: absolute;
+    transform: rotate(45deg);
+}
+.sesiakampis::after {
+    content:"";
+    width: 80px;
+    height:160px;
+    background-color: darkorange;
+    background-color: var(--system2);
+    border-radius: 10px;
+    position: absolute;
+    transform: rotate(-90deg);
 }
 .play-button {
     position: absolute;
-    left: 46%;
-    top: 42%
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* MEDIA */
+@media screen and (max-width:980px) {
+    .learn-UX-design {
+        display: block;
+        grid-template-columns: 100%;
+        gap: 0%;
+    }
+    .learn-UX-design1, .learn-UX-design2 {
+        max-width: 6000px;
+    }
+    .skritulys1 {
+        width: 1px;
+        height: 1px;
+        background-color: cadetblue;
+        background-color: var(--system1);
+        border-radius: 50%;
+        z-index: -1;
+        position: absolute;
+        right: 10000px;
+        bottom: 0px;
+    }
+    .skritulys2 {
+        width: 1px;
+        height: 1px;
+        background-color: cadetblue;
+        background-color: var(--system1);
+        border-radius: 50%;
+        z-index: -1;
+        position: absolute;
+        left: 10000px;
+        top: 0%;
+    }
+    .sesiakampis {
+        width: 1px;
+        height:1px;
+        background-color: darkorange;
+        background-color: var(--system2);
+        border-radius: 10px;
+        z-index: -1;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        margin-left: 10000px;
+    }
+    .sesiakampis2 {
+        width: 1px;
+        height:1px;
+        background-color: darkorange;
+        background-color: var(--system2);
+        border-radius: 10px;
+        z-index: -1;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        transform: rotate(-45deg);
+        margin-left: 10000px;
+    }
 }
 
 /* ANIMACIJOS */
@@ -136,7 +239,7 @@ h1 {
 }
 @keyframes skritulys1 {
     0% {
-        top: 42%
+        bottom: 0px;
     }
     50% {
         background-color: var(--system1);
@@ -160,10 +263,10 @@ h1 {
         background-color: var(--system1);
     }
     100% {
-        top: 52%
+        bottom: -30px;
     }
 }
-.skritulys2 {
+.skritulys2, .sesiakampis, .sesiakampis2 {
     animation-name: skritulys2;
     animation-duration: 500ms;
     animation-delay: 1600ms;
@@ -171,7 +274,8 @@ h1 {
 }
 @keyframes skritulys2 {
     0% {
-        top: 0%
+        top: 0%;
+        left: 50px; 
     }
     50% {
         background-color: var(--system1);
@@ -195,6 +299,23 @@ h1 {
         background-color: var(--system1);
     }
     100% {
-        top: -10%
+        top: -10%;
+        left: 20px;
+    }
+}
+.sesiakampis, .sesiakampis2 {
+    animation-name: sesiakampis;
+    animation-duration: 500ms;
+    animation-delay: 1600ms;
+    animation-fill-mode: forwards;
+}
+@keyframes sesiakampis {
+    0% {
+        top: 0%;
+        left: 50px; 
+    }
+    100% {
+        top: -5%;
+        left: 10px;
     }
 }
